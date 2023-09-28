@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias Dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias Dinamicas</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Imagens podem ser acessadas de vários dispositivos móveis diferentes, com tamanhos de telas diferentes. As imagens do site devem se adaptar ao dispositivo utilizado, visando a otimização de resposta e dados do site.</p>
+    <p>Através da tag <code>&lt;picture&gt;</code> têm-se acesso ao recurso <code>&lt;source:media:type&gt;</code> onde é possível inseririmagens de tamanhos diferentes para telas diferentes, por meio dos pixels. </p>
+    <p>O recurso <code>&lt;source:media:type&gt;</code> deve ser aplicado de forma crescente, a imagem menor primeiro, e depois as maiores.
+    A imagem original deve ser o ultimo elemento do comando <code>&lt;picture&gt;</code></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Flexível.">
+    </picture>
+    <h2>Reproduzindo Áudios</h2>
+    <p>Vamos aprender a reproduzir áudios. </p>
+    <p>Basta usar o comando <code>&lt;audio&gt;</code> e adicionar os parâmetros <code>controls</code> para inserir o controlador</p>
+    <p>Fazendo assim, direto, não há a possíbilidade de escolher o formato ou tipo de arquivo (mp3, ogg, wave), e pode ser que o navegador não tenha compatibilidade com o typo proposto.</p>
+    <audio src="midia/Flying.mp3" controls></audio>
+    <p>Existe uma outra forma de disponibilizar áudios para reprodução de maneira parecida, onde é possível disponibilizar o mesmo áudio em diferentes formatos para maior taxa de compatibilidade. A diferença é que deve-se mudar o "tipo de <code>source</code>. Apaga-se o <code>source</code> sugerido pelo comando <code>audio</code>, e digita novamente, selecionando o <code>source:src</code>. Dessa maneira será necessário adicionar o "type" que podem ser vários como <code>audio/mpeg, audio/wave, audio/ogg</code></p>
+    <audio preload="metadata" controls >
+        <source src="midia/Flying.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso seu navegador não reconheça o arquivo <a href="midia/Flying.mp3">clique aqui</a> para baixar o arquivo.</p>
+    <p>Existe para o segundo caso o parametro <code>loop</code> que reinicia o áudio após o termino.</p>
+</body>
+</html>

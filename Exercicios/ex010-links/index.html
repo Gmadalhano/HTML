@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Utilizando Links Externos</h1>
+    <p>Links são chamados de ancoras e levam a tag &lt;a&gt;.</p>
+    <p>Obs: Sempre que o link direcionar para um outro site, recomenda-se que o link direcione a abertura do site em uma outra aba do navegador, utilizando os parâmetros "target='_blank'", "rel='External'"  de forma que não sobreponha (comportamento natural) a pagina atual de navegação. Quando o link encaminhar para outras áreas do mesmo site, não há problmas quanto a sobreposição.</p>
+    <h3>Exemplo:</h3>
+    <p>Você pode acessar ao <a href="http://gustavoguanabara.github.io" target="_blank" rel="External">repositório publico</a> do professor Gustavo Guanabara</p>
+    <p>Ele também tem um <a href="http://www.youtube.com/cursoemvideo" target="_blank" rel="External">canal no youtube</a>, que vale a pena conferir.</p>
+    <h2>Utilizando links Internos</h2>
+    <p>Essa é a primeira página do nosso site, para continuar navegando <a href="pag002.html" rel="next">clique aqui</a></p>
+    <p>Acesse também a <a href="noticias/pag003.html" target="_self" rel="next">nossa página de notícias</a>.</p>
+    <p>A navegação interna leva o parâmetro "rel='next'"</p>
+    <p>Existe um parâmetro para o "target" quando a nevegação é interna. Utiliza-se o "_self" (target='_self')</p>
+    <h2>Links para Download</h2>
+    <p>Existem alguns parametros para se adicionar quando há algum download para disponibilizar, o parametro varia de acordo com o tipo de arquivo. O site "iana.org" fornece uma relação de parametros para tipo de download desejado.</p>
+
+    <h3>Exemplo de Download</h3>
+    <ul>
+        <li><a href="Livro/Livroteste.pdf" download="Livroteste.pdf">Download PDF</a></li>
+        <li><a href="Livro/Livroteste.zip" download="Livroteste.zip">Download Arquivo ZIP</a></li>
+    </ul>
+</body>
+</html>

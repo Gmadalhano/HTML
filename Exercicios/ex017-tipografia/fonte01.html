@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+            cm, mm, in, px, pt, pc
+            
+            medidas relativas
+            em, rem, ex, vw, vh
+            16px geralmente = 1em
+            
+            utilizar sempre px ou em*/
+            font-size: 1em;
+        }
+
+        h1{/*
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: normal;
+
+            Esses valores podem ser atribuídos em uma única linha utilizando o 'shorthand font'. Para utilizar essa ferramenta os valores devem respeitar a seguinte ordem:
+            font-style -> font-weigth -> font-size -> font-family
+
+            */
+            font: normal bold 2em 'Franklin Gothic Medium', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Utilizar sempre a medida em <code>px (pixel)</code> ou <code>em (1em = 16px)</code></p>
+    <p>A medida em <code>em</code> é relativa ao tamanho padrão do navegador que geralmente são 16px, por exemplo, <code>2em</code> correspondem a 32px</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur voluptatem accusantium odio minima dolor aliquam? Ex culpa vero incidunt officia, harum vitae eligendi quam! Nemo, cumque. Repudiandae, aliquam fugit?</p>
+</body>
+</html>

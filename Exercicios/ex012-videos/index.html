@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias de Vídeos</title>
+</head>
+<body>
+    <h1>Tratando Vídeos</h1>
+    <h2>Tipos de Vídeos</h2>
+    <h3>Videos Hospedados Localmente</h3>
+    <p>Podemos inserir vídeos de diferentes formatos em um site, hospedados em nosso próprio servidos. cada navegador tem uma compatibilidade. <br> Assim como as imagens, o tamanho dos arquivos de vídeo deve ser levado em consideração, arquivos grandes e pesados são prejudicados pelas ferramentas de busca, além de proporcionar uma experiencia ruim aos usuários, causando uma baixa taxa de retenção.</p>
+    <h3>Exemplo 720p</h3>
+    <video src="midia/Video-Teste-30.mp4" width="500" controls></video>
+    <h3>Exemplo OGV</h3>
+    <video src="midia/example.ogv" width="500" controls></video>
+    <p>Esses vídeos foram carregados individualmentes, utilizando somente a tag <code>&lt;video&gt;</code>. Para disponibilizar mais de um formato do mesmo arquivo para diferentes navegadores terem acesso, o procedimento é parecido com de imagens. É necessário especificar o <code>source:src</code> indicando a mídia, e <code>type</code> com o formato.</p>
+    <p>A ordem é diferente das imagens, carrega-se primeiro o arquivo desejado, e depois suas variações, tudo dentro da tag <code>&lt;video&gt;</code></p>
+    <video width="500" poster="imagens/foto-quadra-300.jpg" controls>
+        <source src="midia/Video-Teste-60.mp4" type="video/mp4">
+        <source src="midia/Video-Teste-30.mp4" type="video/mp4">
+    </video>
+    <p>A hospedagem própria vai consumir muita banda, muito tráfego de dados, e vai encarecer o seu projeto.</p>
+    <h2>Videos Hospedados em Outros Sites</h2>
+    <h3>YouTube</h3>
+    <p>Sites como o YouTube disponibilizam uma ferramenta chamada "incorporar" na aba "compartilhar" que gera um código em HTML automaticamente.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TJHP70qreKg?si=CJCUYk_wwiOtlhcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Quando você utiliza o serviço desse tipo de site, o acesso ao video acontece pela plataforma do site utilizado, não sobrecarregando o consumo de dados do seu site. Além disso o YouTube é a segunda maior ferramenta de busca do mundo, o ideal é carregar seus videos lá, e compartilha-los em um seu site.</p>
+    <h3>Vimeo</h3>
+    <p>De forma análoga ao Youtube, o Vimeo tem o recurso "share" que disponibiza o caminho "Embed" (embutir)</p>
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/29315013">Animation Reel</a> from <a href="https://vimeo.com/user8592149">girishchandok</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

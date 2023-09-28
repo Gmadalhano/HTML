@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <p>Existem 3 tipos de listas, listas ordenadas &lt;ol&gt; (ordered list), listas não ordenadas &lt;ul&gt; (unordered list), e as listas mistas. </p>
+    Cada lista tem um parametro "type", que indica o tipo de lista, númerica, alfabética, números romanos, indices no caso da ordenada, e disc, circle e square no caso das não ordenadas, indicando o simbolo que acompanhará a lista
+    Os itens lista são indicados com a tag &lt;li&gt; (list itens).
+    <h2>Listas Ordenadas &lt;ol&gt;</h2>
+    <h3>Númerica - parâmetro 1 (automático)</h3>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+    </ol>
+    <h3>Alfabética (maiúscula) - parâmetro A </h3>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+    </ol>
+    <h3>Alfabética (minúscula) - parâmetro a</h3>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+    </ol>
+    <h3>Números Romanos - parâmetro I </h3>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+    </ol>
+    <h3>Índices - parâmetro i</h3>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <h3>Tipo "disc"</h3>
+    <ul>
+        <li>Coca-Cola</li>
+        <li>Iogurte</li>
+        <li>Frango</li>
+        <li>Banana</li>
+    </ul>
+    <h3>Tipo "circle"</h3>
+    <ul type="circle">
+        <li>Coca-Cola</li>
+        <li>Iogurte</li>
+        <li>Frango</li>
+        <li>Banana</li>
+    </ul>
+    <h3>Tipo "square"</h3>
+    <ul type="square">
+        <li>Coca-Cola</li>
+        <li>Iogurte</li>
+        <li>Frango</li>
+        <li>Banana</li>
+    </ul>
+    <h2>Listas Mistas</h2>
+    <p>São listas compostas por outras listas, como indices de livros por exemplo.</p>
+    <ol>
+        <li><strong>O que é HTML5?</strong></li>
+        <ol type="a">
+            <li>Quando surgiu.</li>
+            <li>Quem inventou.</li>
+            <li>Como se difundiu.</li>
+        </ol>
+        <li><strong>O que é CSS3</strong></li>
+        <ol type="A">
+            <li>Como aplicar</li>
+            <li>Conceitos e técnicas</li>
+        </ol>
+        <li><strong>A Organização de um site</strong></li>
+        <li><strong>Interação com o usuário</strong></li>
+        <li><strong>Conclusão</strong></li>
+        <ul type="disc">
+            <li>Autor: </li>
+            <li>Ano de lançamento: </li>
+            <li>Edição: </li>
+        </ul>
+    </ol>
+    <h2>Listas de Definição</h2>
+    <p>São como dicionários, listando termos e suas definições. As listas de definições tem a tag &lt;dl&gt;, os termos são declarados pela tag &lt;dt&gt; e seus respectivos significados com a tag &lt;dd&gt;. Ex:</p>
+    <br>
+    <dl>
+        <dt>HTML5</dt>
+        <dd>Linguagem de marcação para criação de conteúdo de um site</dd>
+        <dt>CSS3</dt>
+        <dd>Linguagem de marcação para a criação de desing de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+</body>
+</html>

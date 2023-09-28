@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte - Pré Formatado</h2>
+    <p>O comando <code>document.getElement("teste)</code> é escrito em linguágem JavaScript</p>
+    <p>A formatação do trecho em uma fonte monoespácial, isto é, com todos os caracteres ocupando o mesmo espaço na linha, é possível com a tag &lt;code&gt;, utilizado para indicar e facilitar a leitura de códigos.</p>
+    <p>Porém, a tag sozinha não garante a formatação do código, de maneira hierarquicamente falando, o texto perde identação. </p>
+    <p>Para mater a estrutura de um código, ou de um texto nas condições de um código, usamos a tag &lt;pre&gt;.</p>
+    <p>A seguir veremos o mesmo código com e sem a tag "pre", o primeiro sem a aplicação da tag, e segundo utilizando a tag para garantir a formatação do código.</p>
+    <h3>Sem a tag &lt;pre&gt;</h3>
+    <code>
+        number = int(input('Digite um número inteiro: '))
+        if number % 2 == 0:
+            print(f'O valor {number} é PAR')
+        else:
+            print(f'O valor {number} é IMPAR')
+        print('Fim do programa')
+    </code>
+    <h3>Com a tag &lt;pre&gt;</h3>
+    <pre>
+        <code>
+            number = int(input('Digite um número inteiro: '))
+            if number % 2 == 0:
+                print(f'O valor {number} é PAR')
+            else:
+                print(f'O valor {number} é IMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+    <p>Para indicar citações em parágrafos de maneira semantica, utiliza-se a tag &lt;q&gt;, de "quot", é possível inserir as aspas de maneira manual, mas quando o texto exibe alguma citação o adequado é indicar através da tag. As aspas inseridas de forma manual são utilizadas para dar sentido no texto, destacar palavras estrangeiras ou ironia. Exemplo: </p>
+    <h3>Situação de utilização da tag &lt;q&gt;</h3>
+    <p>Como diria um pensador <q>O computador é um burro muito rápido</q>.</p>
+    <h3>Situação de Aspas manual</h3>
+    <p>O termo "quiet quiting" é um tendência ruidosa.</p>
+    <h2>Citações Completas</h2>
+    <p>Citações completas são citações de trechos longos, com formatação específica para esta situação. Para indicar uma citação completa utiliza-se a tag &lt;blockquote&gt; indicando um bloco de citação. Por exemplo:</p>
+    <p>Segundo o autor Jef Noble, no seu livro HTML para Leigos:</p>
+    <blockquote>
+        <q>A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</q>
+    </blockquote>
+    <p>Observa-se a configuração do texto, de maneira descada posicionada a direita da margem.</p>
+    <p>É possível informar a origem da citação adicionando o paramentro "cite=" a tag blockquot, não haverá alteração no conteúdo do material, mas fica registrado indicando o dono do conteúdo.</p>
+    <h2>Siglas e Abreviações</h2>
+    <p>Quando siglas aparecem no texto, pode-se declarar o significado das letras através da tag &lt;abbr&gt;, que disponibiliza um pop-up com o significado completo de uma sigla ou abreviação. Ao chamar a tag, ela automaticamente solicita um "titulo" que é significado da sigla ou abreviação. Por exemplo:</p>
+    <p>Estamos estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascaeting Style Sheets">CSS3</abbr> e esse é um teste de siglas.</p>
+    <p>As siglas ficaram sublinhadas e ao posicionar o cursor do mause sobre as siglas o conteudo dos pop-up aparecem na tela.</p>
+    <h2>Texto Invertido</h2>
+    <p>É possível escrever um conteúdo com o sentido invertido utilizando a tag &lt;bdo&gt;</p>. Quando solicitada, a tag pergunta ao desenvolvedor se a leitura do texto é da esquerda para a direita (left to rigth - ltr) ou da direita para a esquerda (Rigth to left - rtl). Por Exemplo:
+    <h3>Exemplo ltr</h3>
+    <bdo dir="ltr">Estou estudando HTML</bdo>
+    <h3>Exemplo rtl</h3>
+    <bdo dir="rtl">Estou estudando HTML</bdo>
+    <p>Essa provavelmente é a tag mais inutil do HTML</p>
+</body>
+</html>

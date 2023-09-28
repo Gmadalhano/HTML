@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'fonte-titulo';
+            src: url('fontextern/PicturamaAlternate.otf') format('opentype'), url('fontextern/PicturamaAlternate.otf') format('truetype');
+        }
+        @font-face {
+            font-family: 'fonte-corpo';
+            src: url('fontextern/SimpleGarden.otf') format('opentype');
+        }
+
+        body{
+           background-image: linear-gradient(to right, #453831, #BB0000); 
+        }
+
+        main{
+            font-family: 'fonte-corpo', Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            background-color: #DDDEC6;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: justify;
+            color: #4d4d4d;
+            margin: auto;
+            box-shadow: 10px, 10px, 10px, #453831;
+        }
+
+        h1{
+            font-family: 'fonte-titulo', Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+            text-align: center;
+            color: #453831;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, commodi accusamus itaque veniam optio dignissimos minima ut laudantium eveniet molestias possimus nostrum assumenda similique voluptatum? Provident aliquid praesentium nostrum reprehenderit.</p>
+        <br>
+        <p><a href="fonte01.html" rel="prev">Clique aqui</a> para voltar.</p>
+    </main>
+</body>
+</html>

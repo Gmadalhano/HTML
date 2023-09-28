@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas - Parte II</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkolivegreen;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+        }
+        header > h1{
+            text-align: center;
+        }
+        nav{
+            background-color: darkolivegreen;
+            color: white;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+        }
+        nav > a{
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+        }
+
+        section > p{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: gray;
+            text-align: right;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando Com Caixas - Parte II</h1>
+        <p>Nessa parte vamos aprender a configurar as caixas (box)</p>
+        <nav>
+            <a href="#">Exemplo</a>
+            <a href="#">Exemplo</a>
+            <a href="#">Exemplo</a>
+            <a href="#">Exemplo</a>
+            <a href="#">Exemplo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Grouping Tags, separando box de maneira semântica</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Exemplo de Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus qui! Quidem distinctio aspernatur eos corporis ipsum obcaecati delectus libero quae ex. Ut dolore repudiandae fuga saepe, est mollitia adipisci.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h3>Exemplo Subtítulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam tempore harum aliquam perferendis quaerat soluta provident voluptas dolores perspiciatis corporis quam totam vero, delectus ullam repellendus maxime alias officiis!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gustavo Madalhano</p>
+    </footer>
+</body>
+</html>
