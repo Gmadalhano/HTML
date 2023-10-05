@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            margin: 50px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            margin: auto;
+            max-width: 600px;
+        }
+
+        table{
+            text-align: center;
+            width: 300px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr.linha{
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha primeira tabela em HTML</h1>
+        <h2>Hierarquia de dados</h2>
+        <p>
+            Uma tabela dentro do HTML precisa respeitar algumas propriedades no momento de sua declaração.
+        </p>
+        <p>
+            Primeiramente deve-se declarar a existência da tabela (table) através da tag <code>&lt;table&gt;</code>, dentro da tag <code>&lt;table&gt;</code> declaramos as linhas (rows) da tabela, com os valores (data) contidos nela.
+        <pre>
+            <code>&lt;table&gt;
+                &lt;tr&gt;(table row) &lt;/tr&gt;(table row)
+            &lt;/table&gt;
+            </code>
+        </pre>
+        </p>
+        <p>Dentro de cada linha, declara-se todos os valores, um por um, dentro da tag <code>&lt;td&gt;</code> (table data).
+        <pre>
+            <code>&lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;(table data)Valor declarado 01&lt;/td&gt;
+                    &lt;td&gt;(table data)Valor declarado 02&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            </code>
+        </pre>
+        </p>
+        <p>
+            Deve-se utilizar essa estrutura em todas as linhas da tabela.
+        </p>
+        <h3>Exemplo</h3>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+            <tr class="linha">
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+            </tr>
+            <tr class="linha">
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+            </tr>
+        </table>
+        <p>
+            A personalização da tabela é feita em css
+        </p>
+    </main>
+</body>
+</html>
