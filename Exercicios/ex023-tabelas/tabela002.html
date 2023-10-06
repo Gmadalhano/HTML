@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia de Tabelas Grandes</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 20px;
+        }
+
+        main{
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        table{
+            width: 95%;
+            border-collapse: collapse;
+            display: block;
+            margin: auto;
+        }
+
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        thead, tfoot{
+            background-color: rgb(27, 27, 102);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .state{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Anatonia de tabelas Grandes</h1>
+        <p>Tabelas completas são compostas por <strong>legeda (Caption), cabeçalho (header), corpo (Body) e rodapé (footer)</strong>. Cada uma dessas "estruturas" pode conter todos os elementos citados anteriormente.</p>
+        <pre>
+            <code>&lt;table&gt;
+                    CAPTION
+                    THEAD
+                    &lt;th&gt;
+                        &lt;td&gt;(table data)Valor declarado 01&lt;/th&gt;
+                        &lt;th&gt;(table data)Valor declarado 02&lt;/tdh&gt;
+                    &lt;/tr&gt;
+                    TBODY
+                    &lt;tr&gt;
+                        &lt;td&gt;(table data)Valor declarado 01&lt;/td&gt;
+                        &lt;td&gt;(table data)Valor declarado 02&lt;/td&gt;
+                    &lt;/tr&gt;
+                    TFOOT
+                    &lt;tr&gt;
+                        &lt;td&gt;(table data)Valor declarado 01&lt;/td&gt;
+                        &lt;td&gt;(table data)Valor declarado 02&lt;/td&gt;
+                    &lt;/tr&gt;
+            &lt;/table&gt;
+            </code>
+        </pre>
+        <h2>Exemplo</h2>
+        <table>
+            <caption>Os 10 Estados Mais Populosos do Brasil</caption>
+            <thead>
+                <th scope="col" style="width: 60px;">Índice</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População 2022</th>
+                <th scope="col">População 2010</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td class="state">São Paulo</td>
+                    <td>44.450.459</td>
+                    <td>41.262.199</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td class="state">Minas Gerais</td>
+                    <td>20.538.718</td>
+                    <td>19.597.330</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td class="state">Rio de Janeiro</td>
+                    <td>16.054.524</td>
+                    <td>15.989.929</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td class="state">Bahia</td>
+                    <td>14.136.417</td>
+                    <td>14.016.906</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td class="state">Paraná</td>
+                    <td>11.443.208</td>
+                    <td>10.444.526</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td class="state">Rio Grande do Sul</td>
+                    <td>10.880.506</td>
+                    <td>10.693.929</td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td class="state">Pernambuco</td>
+                    <td>9.058.155</td>
+                    <td>8.796.448</td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td class="state">Ceará</td>
+                    <td>8.791.688</td>
+                    <td>8.452.381</td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td class="state">Pará</td>
+                    <td>8.116.132</td>
+                    <td>7.581.051</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="state">Santa Catarina</td>
+                    <td>7.609.601</td>
+                    <td>6.248.436</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th scope="row">Total de Habitantes</th>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
