@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        body{
+            background-color: black;
+            margin-top: 50px;
+        }
+
+        section{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            width: 800px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        table{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+
+        td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <caption>Desafio 02 - Mesclagem de Células</caption>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td> 
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
