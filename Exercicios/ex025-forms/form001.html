@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuários</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
+    <form action="cadastro.php" autocomplete="off">
         <p>
-            Nome: <input type="text" nome="nome" id="nome">
+            <label for="inome">Nome</label>: <input type="text" nome="nome" id="inome">
         </p>
         <p>
-            Sobrenome: <input type="text" nome="sobrenome" id="sobrenome">
+            <label for="isobrenome">Sobrenome</label>: <input type="text" nome="sobrenome" id="isobrenome">
         </p>
         <p>
             <input type="submit" value="Enviar">
