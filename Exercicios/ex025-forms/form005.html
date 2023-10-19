@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários V</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!--Para que o formulário tenha uma unica opção de marcação
+            é necessário que os inputs tenham o mesmo "name" -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmasc"> <label for="isxmasc">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome: </label>
+                <input type="text" name="name" id="iname" required maxlength="30" placeholder="Digite o nome">
+            </p>
+            <p>
+                <label for="imail">E-mail: </label>
+                <input type="email" name="email" id="imail" autocomplete="email" placeholder="Digite o e-mail cadastrado">
+            </p>
+            <p>
+                <label for="iphone">Telefone: </label>
+                <input type="tel" name="phone" id="iphone" required autocomplete="tel-area-code" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{5}-\d{4}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbask" id="ibask"><label for="ibask">Basket </label><br>
+            <input type="checkbox" name="esfut" id="ifut"><label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="esvol" id="ivol"><label for="ivol">Volei </label><br>
+            <input type="checkbox" name="esten" id="iten"><label for="iten">Tenis </label><br>
+            <input type="checkbox" name="esnat" id="inat"><label for="inat">Natação</label> <br>
+            <input type="checkbox" name="esjiu" id="ijiu"><label for="ijiu">Jiu-Jitsu</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
