@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário VIII</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="numb1">Número 1</label>
+            <input type="number" name="inumb1" id="numb1" min="0" max="9" required oninput="sum.innerHTML=Number(numb1.value) + Number(numb2.value)">
+        </div>
+        <div>
+            <label for="numb2">Número 2</label>
+            <input type="number" name="inumb2" id="numb2" min="0" max="9" required oninput="sum.innerHTML=Number(numb1.value) + Number(numb2.value)">
+        </div>
+        <div>
+            <label for="sum">Soma: </label>
+            <output name="sum" id="sum">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <p>
+        Essa operação foi feita com a tag <strong>out</strong> para a exibição do dado. Atravé do parâmetro <strong>oninput</strong> adicionado na tag <strong>input</strong> que já se trata de JavaScript. A tag permite a exibição dos dados inseridos nos quadros descritos. O output somente exibe a informação, ele não coleta os dados gerados.
+    </p>
+</body>
+</html>
