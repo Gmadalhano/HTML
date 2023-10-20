@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário VII</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="state">Estado</label>
+            <select name="state" id="state">
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="PA">Pará</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="BA">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PI">Piauí</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+            </select>
+            <p>
+                Esse formulário foi feito utilizando a tag &lt; select &gt;, nela não é permitido que o usuário insira dados, como no caso de estados do Brasil, as opções foram agrupadas através da tag &lt; optgroup &gt;
+            </p>
+        </div>
+        <div>
+            <label for="job">Profissão:</label>
+            <input type="text" name="job" id="job" list="joblist">
+            <datalist id="joblist">
+                <option>Engenheiro Civil</option>
+                <option>Administrador</option>
+                <option>Médico</option>
+                <option>Advogado</option>
+            </datalist>
+            <p>
+                Esse formulário foi feito utilizando a tag &lt; input &gt; de <strong>type:text</strong>. Nela é possível inserir sugestões de preenchimento, com a tag &lt; datalist &gt; mas o campo é aberto para digitação, caso a opção desejada não se encontre dentro das opções. 
+            </p>
+        </div>
+        <div>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+            <p>
+                Para a caixa de mensagem existe a tag "textarea" que pede a discriminação da quantidade de colunas e linhas. Para fazer a relação com o título da caixa deve utilizar o mesmo procedimento da tag Label
+            </p>
+        </div>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+</body>
+</html>
