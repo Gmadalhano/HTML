@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários VI</title>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="isat">Nivel de Satisfação:</label>
+            <input type="range" name="sat" id="isat" min="0" max="10" value="0">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            Então vimos os seguintes inputs (types):
+            <ul>
+                <li>text</li>
+                <li>password</li>
+                <li>range</li>
+                <li>color</li>
+                <li>submit</li>
+                <li>reset</li>
+                <li>month</li>
+                <li>number</li>
+                <li>date</li>
+                <li>time</li>
+                <li>email</li>
+                <li>tel</li>
+                <li>radio</li>
+                <li>checkbox</li>
+            </ul>
+        </p>
+        <p>
+            Para relacionar a elemento &lt;input&gt; com sua descrição no formulário, a descrição deve estar envelopada dentro da tag &lt;label&gt;, que vai solicitar o "id" do elemento input para fazer a relação. 
+        </p>
+    </form>
+</body>
+</html>
